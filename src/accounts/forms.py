@@ -81,12 +81,12 @@ class UserUpdateForm(UserChangeForm):
         # widgets = {'birthday': forms.DateInput(attrs={'type': 'date'})}
 
 
-class UserReactivateForm(forms.ModelForm):
-    class Meta:
+class UserReactivationForm(forms.ModelForm):
+    email = forms.EmailField(required=True)
+
+    def clean_email(self):
         model = get_user_model()
-        fields = (
-            'email',
-        )
-        labels = {
-            'email': "Please write your email as on registration",
-        }
+        email = self.cleaned_data['email']
+        user = model.objects.get(email=email)
+        user_register.send(get_user_model(), instance=user)
+        return email
