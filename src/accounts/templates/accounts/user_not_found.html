@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+   ERROR
+{% endblock %}
+
+{% block header %}
+    User not found
+{% endblock %}
+
+{% block content %}
+    <p>User not found</p>
+    <p> try again<a href="{% url 'accounts:update_activation' %}"> -Link- </a> or
+        <a href="{% url 'accounts:register' %}">register</a> a new user.</p>
+{% endblock %}
