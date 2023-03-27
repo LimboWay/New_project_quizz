@@ -1,3 +1,5 @@
+from django.contrib.auth import get_user_model, authenticate, login
+
 from accounts.models import User
 
 from django.core.signing import Signer
@@ -58,3 +60,31 @@ class TestViews(TestCase):
         user.refresh_from_db()
         self.assertTrue(user.is_active)
         self.assertTrue(user.is_activated)
+
+    def test_page_not_found(self):
+        response = self.client.get('/non-existing-page')
+        self.assertEqual(response.status_code, 404)
+
+
+class TestLoginView(TestCase):
+    def setUp(self):
+        self.client = Client()
+        self.login_url = reverse('accounts:login')
+        self.user_reactivate_url = reverse("accounts:reactivation")
+        self.username = 'user_1'
+        self.password = '123qwe!@#'
+        self.user = User.objects.create_user(username=self.username, password=self.password)
+
+    def test_login_success(self):
+        response = self.client.post(self.login_url, {'username': self.username, 'password': self.password})
+        self.assertEqual(response.status_code, 302)
+        self.assertRedirects(response, reverse('index'), status_code=302, target_status_code=200)
+        user = authenticate(username=self.username, password=self.password)
+        self.assertIsNotNone(user)
+        self.assertTrue(user.is_authenticated)
+
+    def test_login_failure(self):
+        response = self.client.post(self.login_url, {'username': self.username, 'password': 'wrong_password'})
+        self.assertEqual(response.status_code, 200)
+        user = authenticate(username=self.username, password='wrong_password')
+        self.assertIsNone(user)
