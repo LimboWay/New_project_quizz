@@ -8,10 +8,10 @@ from django.shortcuts import get_object_or_404
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
-from django.views.generic import UpdateView
+from django.views.generic import UpdateView, FormView
 
-from .forms import UserRegisterForm, UserUpdateForm, UserReactivateForm
-from .utils import signer, send_activation_notification
+from .forms import UserReactivationForm, UserRegisterForm, UserUpdateForm
+from .utils import signer
 
 
 class UserRegisterView(CreateView):
@@ -39,28 +39,11 @@ def user_activate(request, sign):
     return render(request, template)
 
 
-def user_reactivation(request):
-    if request.method == "POST":
-        form = UserReactivateForm(request.POST)
-
-        if form.is_valid():
-            email = form.cleaned_data['email']
-            User = get_user_model()
-            user = User.objects.filter(email=email).first()
-
-            match user:
-                case None:
-                    return render(request, 'accounts/user_not_found.html')
-                case user if user.is_active and user.is_activated:
-                    return render(request, 'accounts/user_is_activated.html')
-                case _:
-                    send_activation_notification(user)
-                    return render(request, 'accounts/user_register_done.html')
-
-        return render(request, 'accounts/user_reactivation.html', {'form': form})
-
-    form = UserReactivateForm()
-    return render(request, 'accounts/user_reactivation.html', {'form': form})
+class UserReactivationView(FormView):
+    template_name = 'accounts/user_reactivation.html'
+    model = get_user_model()
+    form_class = UserReactivationForm
+    success_url = reverse_lazy('accounts:reactivation_done')
 
 
 class UserLoginView(LoginView):
