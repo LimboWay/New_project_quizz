@@ -8,7 +8,7 @@ from django.shortcuts import get_object_or_404
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
-from django.views.generic import UpdateView, FormView
+from django.views.generic import FormView, UpdateView
 
 from .forms import UserReactivationForm, UserRegisterForm, UserUpdateForm
 from .utils import signer
