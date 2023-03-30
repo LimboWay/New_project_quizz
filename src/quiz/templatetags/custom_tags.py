@@ -4,10 +4,11 @@ register = template.Library()
 
 
 # tag
-def expression(value, *args):
-    for idx, arg in enumerate(args, 1):
-        value = value.replace(f'%{idx}', str(arg))
-    return eval(value)
+def expression(value: str, *args):
+    # def expression(value, *args):
+    # for idx, arg in enumerate(args, 1):
+    #     value = value.replace(f'%{idx}', str(arg))
+    return eval(value.format(*args))
 
 # {% expression '(%1 - 1) * 100 // %2' 23 56 as progress_level %}
 
