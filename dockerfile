@@ -1,7 +1,7 @@
 FROM python:3.10.10-slim
 
 RUN apt update
-RUN apt install -y python-dev
+RUN apt install -y python3-dev
 RUN apt install -y libpq-dev
 RUN apt install -y gcc
 RUN apt install -y curl
