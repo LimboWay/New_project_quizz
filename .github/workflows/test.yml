@@ -1,10 +1,11 @@
+
 name: Testing
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "origin" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "origin" ]
 
 jobs:
   build:
@@ -26,9 +27,10 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       env:
-        DJANGO_ALLOWED_HOSTS: ${{ secrets.DJANGO_ALLOWED_HOSTS }}
-        DJANGO_DEBUG: ${{ secrets.DJANGO_DEBUG_FOR_TESTING }}
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+        DJANGO_DEBUG: ${{ vars.DJANGO_DEBUG_FOR_TESTING }}
+        DJANGO_ALLOWED_HOSTS: ${{ vars.DJANGO_ALLOWED_HOSTS }}
+
       run: |
         cd src
         python manage.py test

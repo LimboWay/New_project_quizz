@@ -1,0 +1,1469 @@
+[
+{
+   "model": "quiz.exam",
+   "pk": 1,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:05:58.376Z",
+      "update_timestamp": "2023-03-27T09:48:46.750Z",
+      "uuid": "d1fcdc93-17ac-402e-8e20-9e3a5bb02063",
+      "title": "Math",
+      "description": "test",
+      "level": 0
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 2,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.835Z",
+      "update_timestamp": "2023-03-27T09:37:46.835Z",
+      "uuid": "1cb76899-e727-4953-97f3-23cd9a656d56",
+      "title": "Math pro",
+      "description": "test",
+      "level": 2
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.152Z",
+      "update_timestamp": "2023-03-27T10:03:09.152Z",
+      "uuid": "e695c535-2490-4a69-bf6b-385f23e6d9df",
+      "title": "Python",
+      "description": "test",
+      "level": 0
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 1,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:05:58.376Z",
+      "update_timestamp": "2023-03-27T09:05:58.376Z",
+      "exam": 1,
+      "order_num": 1,
+      "text": "1+1=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 2,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:05:58.377Z",
+      "update_timestamp": "2023-03-27T09:05:58.377Z",
+      "exam": 1,
+      "order_num": 2,
+      "text": "1+2=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:05:58.377Z",
+      "update_timestamp": "2023-03-27T09:05:58.377Z",
+      "exam": 1,
+      "order_num": 3,
+      "text": "1+3=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 4,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:22:43.323Z",
+      "update_timestamp": "2023-03-27T09:23:14.651Z",
+      "exam": 1,
+      "order_num": 4,
+      "text": "2+2*2=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 5,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:22:43.324Z",
+      "update_timestamp": "2023-03-27T09:23:14.651Z",
+      "exam": 1,
+      "order_num": 5,
+      "text": "(2+2)*2=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 6,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.835Z",
+      "update_timestamp": "2023-03-27T09:37:46.835Z",
+      "exam": 2,
+      "order_num": 1,
+      "text": "Сколько десятков в числе \"795\"?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 7,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.836Z",
+      "update_timestamp": "2023-03-27T09:37:46.836Z",
+      "exam": 2,
+      "order_num": 2,
+      "text": "В каком числе 60 десятков 8 единиц?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 8,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.836Z",
+      "update_timestamp": "2023-03-27T09:37:46.836Z",
+      "exam": 2,
+      "order_num": 3,
+      "text": "Укажите правильную запись числа четыреста девяносто",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 9,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.836Z",
+      "update_timestamp": "2023-03-27T09:37:46.836Z",
+      "exam": 2,
+      "order_num": 4,
+      "text": "Какое число следует при счёте сразу за числом 809",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 10,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.836Z",
+      "update_timestamp": "2023-03-27T09:37:46.836Z",
+      "exam": 2,
+      "order_num": 5,
+      "text": "Верно ли неравенство 305 > 315?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 11,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.837Z",
+      "update_timestamp": "2023-03-27T09:37:46.837Z",
+      "exam": 2,
+      "order_num": 6,
+      "text": "Какое из равенств верно? 1) 200 - 80 = 80. 2) 600 - 1 = 599",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 12,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.837Z",
+      "update_timestamp": "2023-03-27T09:37:46.837Z",
+      "exam": 2,
+      "order_num": 7,
+      "text": "Чему равна шестая часть числа \"420\"?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 13,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.837Z",
+      "update_timestamp": "2023-03-27T09:37:46.837Z",
+      "exam": 2,
+      "order_num": 8,
+      "text": "Чему равно значение выражения \"250 - 50 : 5\" ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 14,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.837Z",
+      "update_timestamp": "2023-03-27T09:37:46.837Z",
+      "exam": 2,
+      "order_num": 9,
+      "text": "Какое число следует при счёте за числом \"999 999\"?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 15,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:37:46.837Z",
+      "update_timestamp": "2023-03-27T09:37:46.837Z",
+      "exam": 2,
+      "order_num": 10,
+      "text": "Какое число следует при счёте за числом \"99 999\"?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 16,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:48:46.751Z",
+      "update_timestamp": "2023-03-27T09:48:46.751Z",
+      "exam": 1,
+      "order_num": 6,
+      "text": "2+2=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 17,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:48:46.751Z",
+      "update_timestamp": "2023-03-27T09:48:46.751Z",
+      "exam": 1,
+      "order_num": 7,
+      "text": "3+3=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 18,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:48:46.751Z",
+      "update_timestamp": "2023-03-27T09:48:46.751Z",
+      "exam": 1,
+      "order_num": 8,
+      "text": "4+4=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 19,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:48:46.751Z",
+      "update_timestamp": "2023-03-27T09:48:46.751Z",
+      "exam": 1,
+      "order_num": 9,
+      "text": "5+5=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 20,
+   "fields": {
+      "create_timestamp": "2023-03-27T09:48:46.752Z",
+      "update_timestamp": "2023-03-27T09:48:46.752Z",
+      "exam": 1,
+      "order_num": 10,
+      "text": "11+11=?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 21,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.152Z",
+      "update_timestamp": "2023-03-27T10:03:09.152Z",
+      "exam": 3,
+      "order_num": 1,
+      "text": "К какому типу данных относятся целые числа в Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 22,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.153Z",
+      "update_timestamp": "2023-03-27T10:03:09.153Z",
+      "exam": 3,
+      "order_num": 2,
+      "text": "За что отвечает ключевое слово float() в Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 23,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.153Z",
+      "update_timestamp": "2023-03-27T10:03:09.153Z",
+      "exam": 3,
+      "order_num": 3,
+      "text": "К какому типу данных относятся строки в Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 24,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.153Z",
+      "update_timestamp": "2023-03-27T10:03:09.153Z",
+      "exam": 3,
+      "order_num": 4,
+      "text": "Что такое список в Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 25,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.153Z",
+      "update_timestamp": "2023-03-27T10:03:09.153Z",
+      "exam": 3,
+      "order_num": 5,
+      "text": "Отметьте все способы создания списка в Python?(может быть несколько правильных ответов)",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 26,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.153Z",
+      "update_timestamp": "2023-03-27T10:03:09.153Z",
+      "exam": 3,
+      "order_num": 6,
+      "text": "Чем являются кортежи в Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 27,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.154Z",
+      "update_timestamp": "2023-03-27T10:03:09.154Z",
+      "exam": 3,
+      "order_num": 7,
+      "text": "Что такое переменная в Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 28,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.154Z",
+      "update_timestamp": "2023-03-27T10:03:09.154Z",
+      "exam": 3,
+      "order_num": 8,
+      "text": "Отметьте все условные операторы, которые есть в Python (может быть несколько правильных ответов):",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 29,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.154Z",
+      "update_timestamp": "2023-03-27T10:03:09.154Z",
+      "exam": 3,
+      "order_num": 9,
+      "text": "Отметьте все операторы цикла, которые есть в Python (может быть несколько правильных ответов):",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 30,
+   "fields": {
+      "create_timestamp": "2023-03-27T10:03:09.154Z",
+      "update_timestamp": "2023-03-27T10:03:09.154Z",
+      "exam": 3,
+      "order_num": 10,
+      "text": "Чем цикл for отличается от цикла while в Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 10,
+   "fields": {
+      "question": 1,
+      "text": "2",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 11,
+   "fields": {
+      "question": 1,
+      "text": "11",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 12,
+   "fields": {
+      "question": 1,
+      "text": "1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 13,
+   "fields": {
+      "question": 1,
+      "text": "one",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 14,
+   "fields": {
+      "question": 2,
+      "text": "3",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 15,
+   "fields": {
+      "question": 2,
+      "text": "12",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 16,
+   "fields": {
+      "question": 2,
+      "text": "4",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 17,
+   "fields": {
+      "question": 2,
+      "text": "one two",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 18,
+   "fields": {
+      "question": 3,
+      "text": "4",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 19,
+   "fields": {
+      "question": 3,
+      "text": "13",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 20,
+   "fields": {
+      "question": 3,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 21,
+   "fields": {
+      "question": 3,
+      "text": "one",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 22,
+   "fields": {
+      "question": 4,
+      "text": "6",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 23,
+   "fields": {
+      "question": 4,
+      "text": "8",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 24,
+   "fields": {
+      "question": 4,
+      "text": "22",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 25,
+   "fields": {
+      "question": 4,
+      "text": "two",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 26,
+   "fields": {
+      "question": 5,
+      "text": "8",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 27,
+   "fields": {
+      "question": 5,
+      "text": "6",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 28,
+   "fields": {
+      "question": 5,
+      "text": "4",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 29,
+   "fields": {
+      "question": 5,
+      "text": "10",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 30,
+   "fields": {
+      "question": 6,
+      "text": "79",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 31,
+   "fields": {
+      "question": 6,
+      "text": "80",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 32,
+   "fields": {
+      "question": 6,
+      "text": "70",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 33,
+   "fields": {
+      "question": 6,
+      "text": "78",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 34,
+   "fields": {
+      "question": 7,
+      "text": "608",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 35,
+   "fields": {
+      "question": 7,
+      "text": "68",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 36,
+   "fields": {
+      "question": 7,
+      "text": "806",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 37,
+   "fields": {
+      "question": 7,
+      "text": "768",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 38,
+   "fields": {
+      "question": 8,
+      "text": "490",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 39,
+   "fields": {
+      "question": 8,
+      "text": "409",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 40,
+   "fields": {
+      "question": 8,
+      "text": "400 90",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 41,
+   "fields": {
+      "question": 8,
+      "text": "49",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 42,
+   "fields": {
+      "question": 9,
+      "text": "810",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 43,
+   "fields": {
+      "question": 9,
+      "text": "900",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 44,
+   "fields": {
+      "question": 9,
+      "text": "90",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 45,
+   "fields": {
+      "question": 9,
+      "text": "800 10",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 46,
+   "fields": {
+      "question": 10,
+      "text": "Нет",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 47,
+   "fields": {
+      "question": 10,
+      "text": "Да",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 48,
+   "fields": {
+      "question": 10,
+      "text": "Не знаю",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 49,
+   "fields": {
+      "question": 10,
+      "text": "620",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 50,
+   "fields": {
+      "question": 11,
+      "text": "1)",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 51,
+   "fields": {
+      "question": 11,
+      "text": "2)",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 52,
+   "fields": {
+      "question": 11,
+      "text": "Не знаю",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 53,
+   "fields": {
+      "question": 12,
+      "text": "7",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 54,
+   "fields": {
+      "question": 12,
+      "text": "70",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 55,
+   "fields": {
+      "question": 12,
+      "text": "77",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 56,
+   "fields": {
+      "question": 12,
+      "text": "20",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 57,
+   "fields": {
+      "question": 13,
+      "text": "40",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 58,
+   "fields": {
+      "question": 13,
+      "text": "195",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 59,
+   "fields": {
+      "question": 13,
+      "text": "240",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 60,
+   "fields": {
+      "question": 13,
+      "text": "Не знаю",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 61,
+   "fields": {
+      "question": 14,
+      "text": "Миллион",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 62,
+   "fields": {
+      "question": 14,
+      "text": "Сто тысяч",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 63,
+   "fields": {
+      "question": 14,
+      "text": "Десять тысяч",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 64,
+   "fields": {
+      "question": 14,
+      "text": "Миллиард",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 65,
+   "fields": {
+      "question": 15,
+      "text": "десять тысяч",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 66,
+   "fields": {
+      "question": 15,
+      "text": "миллион",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 67,
+   "fields": {
+      "question": 15,
+      "text": "сто тысяч",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 68,
+   "fields": {
+      "question": 15,
+      "text": "Не знаю",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 69,
+   "fields": {
+      "question": 16,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 70,
+   "fields": {
+      "question": 16,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 71,
+   "fields": {
+      "question": 16,
+      "text": "4",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 72,
+   "fields": {
+      "question": 16,
+      "text": "8",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 73,
+   "fields": {
+      "question": 17,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 74,
+   "fields": {
+      "question": 17,
+      "text": "8",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 75,
+   "fields": {
+      "question": 17,
+      "text": "9",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 76,
+   "fields": {
+      "question": 17,
+      "text": "6",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 77,
+   "fields": {
+      "question": 18,
+      "text": "4",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 78,
+   "fields": {
+      "question": 18,
+      "text": "8",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 79,
+   "fields": {
+      "question": 18,
+      "text": "16",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 80,
+   "fields": {
+      "question": 18,
+      "text": "1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 81,
+   "fields": {
+      "question": 19,
+      "text": "25",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 82,
+   "fields": {
+      "question": 19,
+      "text": "10",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 83,
+   "fields": {
+      "question": 19,
+      "text": "5",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 84,
+   "fields": {
+      "question": 19,
+      "text": "11",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 85,
+   "fields": {
+      "question": 20,
+      "text": "11",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 86,
+   "fields": {
+      "question": 20,
+      "text": "22",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 87,
+   "fields": {
+      "question": 20,
+      "text": "111",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 88,
+   "fields": {
+      "question": 20,
+      "text": "12",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 90,
+   "fields": {
+      "question": 21,
+      "text": "float",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 91,
+   "fields": {
+      "question": 21,
+      "text": "char",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 92,
+   "fields": {
+      "question": 21,
+      "text": "str",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 93,
+   "fields": {
+      "question": 21,
+      "text": "int",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 94,
+   "fields": {
+      "question": 22,
+      "text": "За преобразование в символьный тип данных",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 95,
+   "fields": {
+      "question": 22,
+      "text": "За преобразование в логический тип данных",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 96,
+   "fields": {
+      "question": 22,
+      "text": "За преобразование в целые числа",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 97,
+   "fields": {
+      "question": 22,
+      "text": "За преобразование в числа с плавающей точкой",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 98,
+   "fields": {
+      "question": 23,
+      "text": "int",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 99,
+   "fields": {
+      "question": 23,
+      "text": "float",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 100,
+   "fields": {
+      "question": 23,
+      "text": "str",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 101,
+   "fields": {
+      "question": 23,
+      "text": "char",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 102,
+   "fields": {
+      "question": 24,
+      "text": "упорядоченные изменяемые коллекции объектов произвольных типов",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 103,
+   "fields": {
+      "question": 24,
+      "text": "неупорядоченные изменяемые коллекции объектов произвольных типов",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 104,
+   "fields": {
+      "question": 24,
+      "text": "неупорядоченные неизменяемые коллекции объектов произвольных типов",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 105,
+   "fields": {
+      "question": 24,
+      "text": "упорядоченные неизменяемые коллекции объектов произвольных типов",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 106,
+   "fields": {
+      "question": 25,
+      "text": "встроенной функцией list",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 107,
+   "fields": {
+      "question": 25,
+      "text": "при помощи генератора списков",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 108,
+   "fields": {
+      "question": 25,
+      "text": "при помощи конструкции { }",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 109,
+   "fields": {
+      "question": 25,
+      "text": "двумерными списками",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 110,
+   "fields": {
+      "question": 26,
+      "text": "расширением списков",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 111,
+   "fields": {
+      "question": 26,
+      "text": "неизменяемыми списками",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 112,
+   "fields": {
+      "question": 26,
+      "text": "подклассом словарей",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 113,
+   "fields": {
+      "question": 26,
+      "text": "двумерными списками",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 114,
+   "fields": {
+      "question": 27,
+      "text": "именованная область памяти для хранения данных",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 115,
+   "fields": {
+      "question": 27,
+      "text": "именованная область памяти для хранения данных, значения которых в процессе выполнения не могут изменяться",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 116,
+   "fields": {
+      "question": 27,
+      "text": "область памяти для преобразования данных",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 117,
+   "fields": {
+      "question": 28,
+      "text": "else",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 118,
+   "fields": {
+      "question": 28,
+      "text": "then",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 119,
+   "fields": {
+      "question": 28,
+      "text": "if",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 120,
+   "fields": {
+      "question": 28,
+      "text": "elif",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 121,
+   "fields": {
+      "question": 28,
+      "text": "switch",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 122,
+   "fields": {
+      "question": 29,
+      "text": "do…while",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 123,
+   "fields": {
+      "question": 29,
+      "text": "for each..",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 124,
+   "fields": {
+      "question": 29,
+      "text": "while",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 125,
+   "fields": {
+      "question": 29,
+      "text": "for",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 126,
+   "fields": {
+      "question": 30,
+      "text": "цикл for может являться бесконечным",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 127,
+   "fields": {
+      "question": 30,
+      "text": "цикл for более вычислительно затратный",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 128,
+   "fields": {
+      "question": 30,
+      "text": "цикл for обязательно имеет конечное число итераций",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 129,
+   "fields": {
+      "question": 30,
+      "text": "цикл for позволяет выходить за границы массива",
+      "is_correct": false
+   }
+}
+]
