@@ -8,7 +8,6 @@ RUN apt install -y curl
 RUN apt install -y mc
 RUN apt install -y vim
 
-
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRIREBYTECODE 1
 
@@ -16,13 +15,10 @@ RUN mkdir /opt/src
 WORKDIR /opt/src
 
 COPY requirements.txt .
-RUN pip install --upgrade pip && \
-    pip install -r requirements.txt && \
-    rm -f requirements.txt
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+RUN rm -f requirements.txt
 
 COPY src .
-# COPY .env_prod ../.env
 
 EXPOSE 8890
-
-# CMD python manage.py runserver 0.0.0.0:8890
